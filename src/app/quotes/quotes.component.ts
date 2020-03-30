@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  quotes:Quote[]=[
-    {id:1,name:'When life gives you lemons make lemonade'},
-    {id:2,name:'Doubt is the origin of wisdom'},
+  quote:Quote[]=[
+    new Quote(1, 'Essy Mwangi','Life','When life gives you lemons make lemonade','Anonymous'),
+    new Quote(1, 'Essy Mwangi','Doubt','Doubt is the origin of wisdom','Anonymous'),
   ];
 
   constructor() { }
@@ -19,3 +19,5 @@ export class QuotesComponent implements OnInit {
   }
 
 }
+
+
