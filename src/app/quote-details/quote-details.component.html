@@ -1,4 +1,6 @@
-<p>
-  {{quote.quote}}
-</p>
-<button (click)= 'goalDelete(true)'>Delete</button>
+<h6 class="card-subtitle mb-10 text-muted"> - {{quote.author}} <span id="when">Posted: {{quote.publishedDate|datePipe}} days ago.</span> </h6>
+<div class="container-fluid" id="buttons">
+  <button class="btn btn-sm btn-success" (click)='upvote()'>{{quote.upVote}} <i class="fa fa-thumbs-up" id="like"></i></button> 
+  <button class="btn btn-sm hate" id="hate" (click)='downvote()'>{{quote.dnVote}} <i class="fa fa-thumbs-down" id="dislike"></i></button> 
+  <button class="btn btn-sm btn-danger" id="del" (click)='goalDelete(true)'><i class="fa fa-trash" id="delete"></i>Delete</button> 
+</div>

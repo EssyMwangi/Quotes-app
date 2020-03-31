@@ -1,11 +1,75 @@
-<div>
+<!-- <div>
   <h1>QUOTES</h1>
   <ul>
     <div *ngFor='let quote of quote;let i = index'>
-      <li>{{quote.name}}</li>
+      <li>{{quote.name}} posted on {{quote.publishedDate| date}}</li>
       <button (click)='displayInfo(i)'>Toggle Details</button>
       <app-quote-details *ngIf='quote.showInfo' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
     </div>
   </ul>
+</div> -->
+
+<div class="overlay">
+  <h1>
+    QUOTES
+  </h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="all-cards">
+          <div style="font-size: 1.4em" class="favquote" *ngFor="let quote of quote; let i = index; let j = index;">
+            <div class="card-body">
+              <div class="high-quote" appHighlightQuote *ngIf='quote.upVote == highest(i) && highest(i) > 0'>
+                <br>
+                <h5>QUOTE OF THE DAY</h5>
+                <p class="quote-desc">{{quote.quote}}
+                <br>
+                <span>-{{quote.author}}</span></p>
+                  <div class="votes">
+                    <button class="btn btn-sm btn-success" (click)='upVoter(i);highest(i);'><span>{{quote.upVote}}</span>
+                    </button>
+                    <button class="btn btn-sm hate" (click)='dnVoter(i)'>
+                      <span class="dis">{{quote.dnVote}}</span>
+                    </button>
+                    
+                    <hr>
+                    <p class="date">Published on: {{quote.publishedDate | date}} by {{quote.name}}</p>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+        
+        
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-quotes-form (add)="addedQuote($event)"></app-quotes-form>
+      </div>
+     
+      
+
+      <div class="col-sm-6">
+        <div class="all-cards">
+          <div *ngFor="let quote of quote; let i= index" class="card" style="width: 24rem;"  >
+            <div class="card-body">
+              <h4 class="card-title">{{quote.title}} {{quote.highestupVote}}<button (click)='displayInfo(i)' class="btn btn-success btn-sm" id="quotes-button" >DETAILS</button></h4>
+              <p class="card-text" id="param">{{quote.quote}}</p>
+              <app-quote-details *ngIf='quote.showInfo' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+              <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span id="datecolor">{{quote.publishedDate|date}}</span></span></span>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
 
