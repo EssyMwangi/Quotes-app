@@ -1,10 +1,26 @@
+body{
+  font-family: 'Dancing Script', cursive;
+}
 .form-control{
   background: transparent;
-  font-weight: 570;
+  /* font-weight: 570; */
+  color: whitesmoke;
 }
-label{
+textarea{
+  color: whitesmoke;
+}
+.label{
   
-  font-weight: 600;
+  /* font-weight: 600; */
+  color: whitesmoke;
+
+}
+.headingform{
+  color: whitesmoke;
+  text-align: center;
+}
+input{
+  color: whitesmoke;
 }
 hr{
   width: 50%;
@@ -15,12 +31,12 @@ hr{
   
   text-align: center;
   padding-top: 2%;
+  color: whitesmoke;
 }
 .container-fluid{
-  /* background-color: rgba(0, 0, 0, 0.374); */
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   box-shadow: 2px 2px 3px 2px black;
-  font-family: 'Architects Daughter', cursive;
   margin-bottom: 5%;
 }

@@ -1,39 +1,28 @@
-<!-- <div>
-  <h1>QUOTES</h1>
-  <ul>
-    <div *ngFor='let quote of quote;let i = index'>
-      <li>{{quote.name}} posted on {{quote.publishedDate| date}}</li>
-      <button (click)='displayInfo(i)'>Toggle Details</button>
-      <app-quote-details *ngIf='quote.showInfo' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-    </div>
-  </ul>
-</div> -->
 
 <div class="overlay">
-  <h1>
-    QUOTES
+  <h1 class="title">
+    {{ title | titlecase }}
   </h1>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
         <div class="all-cards">
           <div style="font-size: 1.4em" class="favquote" *ngFor="let quote of quote; let i = index; let j = index;">
-            <div class="card-body">
-              <div class="high-quote" appHighlightQuote *ngIf='quote.upVote == highest(i) && highest(i) > 0'>
+            <div class="card">
+              <div class="high-quote" class="card-body" appHighlightQuote *ngIf='quote.upVote == highest(i) && highest(i) > 0'>
                 <br>
-                <h5>QUOTE OF THE DAY</h5>
-                <p class="quote-desc">{{quote.quote}}
+                <h4 class="heading">QUOTE OF THE DAY</h4>
+                <p class="card-title">{{quote.title |uppercase}}</p>
+                <p  class="quote-desc"class="card-text">{{quote.quote}}
                 <br>
-                <span>-{{quote.author}}</span></p>
+                <span class="card-subtitle mb-10 text-muted">-{{quote.author}}</span></p>
                   <div class="votes">
-                    <button class="btn btn-sm btn-success" (click)='upVoter(i);highest(i);'><span>{{quote.upVote}}</span>
+                    <button class="btn btn-sm btn-success" (click)='upVoter(i);highest(i);'><span>{{quote.upVote}}<i class="fa fa-thumbs-up" id="like"></i></span>
                     </button>
                     <button class="btn btn-sm hate" (click)='dnVoter(i)'>
-                      <span class="dis">{{quote.dnVote}}</span>
+                      <span class="dis">{{quote.dnVote}}<i class="fa fa-thumbs-down" id="dislike"></i></span>
                     </button>
-                    
-                    <hr>
-                    <p class="date">Published on: {{quote.publishedDate | date}} by {{quote.name}}</p>
+                    <p id="when" class="date">Published on: {{quote.publishedDate | date}} by {{quote.name}}</p>
                   </div>
               </div>
             </div>
@@ -61,7 +50,7 @@
               <h4 class="card-title">{{quote.title}} {{quote.highestupVote}}<button (click)='displayInfo(i)' class="btn btn-success btn-sm" id="quotes-button" >DETAILS</button></h4>
               <p class="card-text" id="param">{{quote.quote}}</p>
               <app-quote-details *ngIf='quote.showInfo' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-              <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span id="datecolor">{{quote.publishedDate|date}}</span></span></span>
+              <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span id="datecolor">{{quote.publishedDate|date:'short'}}</span></span></span>
              
             </div>
           </div>

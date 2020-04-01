@@ -5,6 +5,12 @@ h1{
   padding-bottom: 2%;
   padding-top: 2%;
 }
+.title{
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+ 
+}
 .overlay{
   border-radius: 5px;
   margin-top:4%;
@@ -30,6 +36,28 @@ h1{
 .card{
   margin-bottom: 2%;
   box-shadow: 2px 2px 3px 2px black;
+  
+}
+.card1{
+  background-color: whitesmoke;
+  margin-bottom: 2%;
+  box-shadow: 3px 3px 4px 3px black;
+  font-size: 25px;
+  text-align: center;
+  /* background-color: transparent; */
+  
+
+  
+}
+.btn{
+  margin-bottom: 10% ;
+  margin-left: 10%;
+
+}
+#when{
+  font-size: 18px;
+  color: gray;
+  
 }
 #date{
   float: right;
@@ -67,4 +95,24 @@ h1{
 
 .quote-des{
  font-size: 15px;
+}
+
+/* h4{
+  color: white;
+} */
+
+.date{
+  color: black;
+}
+.heading{
+  text-align: center;
+  color: green;
+}
+#like{
+  font-size: 16px;
+  margin-left: 10px;
+}
+#dislike{
+  font-size: 16px;
+  margin-left: 10px;
 }

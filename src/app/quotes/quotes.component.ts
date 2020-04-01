@@ -8,11 +8,13 @@ import { Component, OnInit , Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  title = 'Quotes Hub';
 
 
   quote:Quote[]=[
-    new Quote(1, 'Essy', 'Life','Every moment is a fresh beginning.','Anonymous',0,0,new Date(2020,2,10)),
-    new Quote(2, 'Ashley', 'Wisdom','Doubt is the beginning of wisdom.','Anonymous',0,0,new Date(2020,3,14)),
+    new Quote(1, 'Essy', 'Life','Every moment is a fresh beginning.','Anonymous',0,0,new Date(2019,1,7)),
+    new Quote(2, 'Ashley', 'Wisdom','Doubt is the beginning of wisdom.','Anonymous',0,0,new Date(2020,1,8)),
+    new Quote(3, 'Njoki', 'Love','We love the things we love for what they are.','Anonymous',0,0,new Date(2020,2,1)),
   
   ];
 
@@ -33,11 +35,17 @@ export class QuotesComponent implements OnInit {
       console.log('${this.quotes[index].upVote }');
     }
   }
+
+  get sortQuotes() {
+    return this.quote.sort((a, b) => {
+      return <any>new Date(b.publishedDate) - <any>new Date(a.publishedDate);
+    });
+  }  
  
   addedQuote(quote){
     let arraysize = this.quote.length;
     quote.id = arraysize+1;
-    quote.publishedDate = new Date(quote.completeDate)
+    quote.publishedDate = new Date(quote.publishedDate)
     this.quote.push(quote)
   }
 
