@@ -23,7 +23,7 @@ export class QuotesComponent implements OnInit {
   }
   deleteQuote(isComplete, index){
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].name}?`)
+      let toDelete = confirm(`Are you sure you want to delete : ${this.quote[index].quote}?`)
 
       if (toDelete){
         this.quote.splice(index,1)
@@ -54,7 +54,7 @@ export class QuotesComponent implements OnInit {
     i = this.quote[index].upVote;
     i++;
     this.quote[index].upVote = i;
-    // console.log('this i: ' + i);
+    
   }
 
   dnVoter(index) {
