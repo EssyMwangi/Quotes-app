@@ -1,20 +1,17 @@
-h1{
- 
+h1 {
   text-align: center;
   font-weight: bold;
   padding-bottom: 2%;
   padding-top: 2%;
 }
-.title{
+.title {
   color: black;
-  font-family: 'Playfair Display', serif;
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: "Playfair Display", serif;
   font-size: 80px;
- 
 }
-.overlay{
+.overlay {
   border-radius: 5px;
-  margin-top:4%;
+  margin-top: 4%;
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 5%;
@@ -22,62 +19,57 @@ h1{
   padding-left: 1%;
   padding-bottom: 5%;
 }
-#name{
-  color:palevioletred;
+#name {
+  color: palevioletred;
   font-weight: 800;
 }
-.all-cards{
+.all-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#quotes-button{
+#quotes-button {
   float: right;
 }
-.card{
+.card {
   margin-bottom: 2%;
   box-shadow: 2px 2px 3px 2px black;
   background-color: rgba(0, 0, 0, 0.7);
   color: whitesmoke;
-  
 }
-.card1{
+.card1 {
   background-color: whitesmoke;
   margin-bottom: 2%;
   box-shadow: 3px 3px 4px 3px black;
   font-size: 25px;
   text-align: center;
   /* background-color: transparent; */
-
 }
-.card-title1{
+.card-title1 {
   text-align: center;
   color: palevioletred;
-
 }
-.card-title{
+.card-title {
   color: palevioletred;
 }
-.btn{
-  margin-bottom: 10% ;
+.btn {
+  margin-bottom: 10%;
   margin-left: 10%;
-
 }
-#when{
+#when {
   font-size: 18px;
   color: gray;
-  
 }
-#date{
+#date {
   float: right;
   font-size: 14px;
 }
-#datecolor{
+#datecolor {
   color: palevioletred;
   font-weight: 400;
 }
-.card-text{
-  font-family: 'Handlee', cursive;
+.card-text {
+  font-family: "Handlee", cursive;
   font-weight: 570;
   font-size: 18px;
 }
@@ -93,38 +85,36 @@ h1{
   color: rgb(5, 61, 61);
   background-clip: border;
   border-radius: 20px;
-
-
 }
-.hate{
+.hate {
   margin-left: 10px;
   background-color: brown;
   color: white;
 }
 
-.quote-des{
- font-size: 15px;
+.quote-des {
+  font-size: 15px;
 }
 
 /* h4{
   color: white;
 } */
 
-.date{
+.date {
   color: black;
 }
-.heading{
+.heading {
   text-align: center;
   color: whitesmoke;
 }
-#like{
+#like {
   font-size: 16px;
   margin-left: 10px;
 }
-#dislike{
+#dislike {
   font-size: 16px;
   margin-left: 10px;
 }
-.quote-desc{
+.quote-desc {
   font-size: 40px;
 }

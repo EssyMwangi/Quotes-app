@@ -1,46 +1,43 @@
-body{
-  font-family: 'Dancing Script', cursive;
+body {
+  font-family: "Dancing Script", cursive;
   color: black;
 }
-.form-control{
+.form-control {
   background-color: transparent;
   font-weight: 570;
   color: whitesmoke;
 }
-textarea{
+textarea {
   color: whitesmoke;
 }
-.label{
-  
+.label {
   /* font-weight: 600; */
   color: whitesmoke;
 }
-.headingform{
+.headingform {
   color: whitesmoke;
   text-align: center;
 }
-input{
+input {
   color: whitesmoke;
 }
-hr{
+hr {
   width: 50%;
   height: 2px;
   background-color: whitesmoke;
 }
-.heading{
-  
+.heading {
   text-align: center;
   padding-top: 2%;
   color: whitesmoke;
-} 
-.container-fluid{
+}
+.container-fluid {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   padding-bottom: 5%;
   box-shadow: 2px 2px 3px 2px black;
   margin-bottom: 5%;
-
 }
-input{
+input {
   color: whitesmoke;
 }

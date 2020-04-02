@@ -1,28 +1,28 @@
-#delete{
+#delete {
   font-size: 19px;
   margin-right: 10px;
 }
-#del{
-  float:right;
+#del {
+  float: right;
 }
 
-#buttons{
+#buttons {
   margin-top: 5%;
   margin-bottom: 10%;
   box-sizing: border-box;
   float: right;
 }
-#when{
-  float:right;
-  font-family: 'Handlee', cursive;
+#when {
+  float: right;
+  font-family: "Handlee", cursive;
 }
-#like{
+#like {
   font-size: 16px;
 }
-#dislike{
+#dislike {
   font-size: 16px;
 }
-.hate{
+.hate {
   margin-left: 10px;
   background-color: brown;
   color: white;
