@@ -14,7 +14,7 @@ This is Angular CLI application that displays quotes, allow the user to input ne
 This project was generated with [Angular CLI]`https://github.com/angular/angular-cli/` version 9.0.7.
 
 ## Screenshot
-![](assets/screenshot.png)
+<img src= "https://github.com/EssyMwangi/Quotes-app/blob/master/src/assets/screenshot.png?raw=true" width="900px" height="440px">
 
 
 ## Development server
