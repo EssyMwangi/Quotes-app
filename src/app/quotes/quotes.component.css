@@ -5,19 +5,18 @@ h1 {
   padding-top: 2%;
 }
 .title {
-  color: black;
+  color: rgba(84, 29, 85, 0.7);
   font-family: "Playfair Display", serif;
-  font-size: 50px;
+  font-size: 70px;
 }
 .overlay {
   border-radius: 5px;
   margin-left: 4%;
   margin-right: 4%;
   padding-left: 1%;
-  padding-bottom: 5%;
 }
 #name {
-  color: palevioletred;
+  color: rgba(235, 143, 236, 0.7);
   font-weight: 800;
 }
 .all-cards {
@@ -44,10 +43,10 @@ h1 {
 }
 .card-title1 {
   text-align: center;
-  color: palevioletred;
+  color: rgba(235, 143, 236, 0.7);
 }
 .card-title {
-  color: palevioletred;
+  color: rgba(235, 143, 236, 0.7);
 }
 .btn {
   margin-bottom: 10%;
@@ -62,7 +61,7 @@ h1 {
   font-size: 14px;
 }
 #datecolor {
-  color: palevioletred;
+  color: rgba(235, 143, 236, 0.7);
   font-weight: 400;
 }
 .card-text {

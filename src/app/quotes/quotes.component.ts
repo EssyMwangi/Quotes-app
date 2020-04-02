@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
   styleUrls: ["./quotes.component.css"]
 })
 export class QuotesComponent implements OnInit {
-  title = "Quotes Hub";
+  title = "Hekima Quotes";
 
   quote: Quote[] = [
     new Quote(
