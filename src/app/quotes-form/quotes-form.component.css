@@ -1,8 +1,9 @@
 body{
   font-family: 'Dancing Script', cursive;
+  color: black;
 }
 .form-control{
-  background: transparent;
+  background-color: transparent;
   /* font-weight: 570; */
   color: whitesmoke;
 }
@@ -25,18 +26,26 @@ input{
 hr{
   width: 50%;
   height: 2px;
-  background-color: green;
+  background-color: whitesmoke;
 }
 .heading{
   
   text-align: center;
   padding-top: 2%;
   color: whitesmoke;
-}
+} 
+
 .container-fluid{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   /* padding-bottom: 5%; */
   box-shadow: 2px 2px 3px 2px black;
   margin-bottom: 5%;
+  /* background-image: url(../image/closeup-photo-of-journal-book-and-pencils-1018133.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+input{
+  color: whitesmoke;
 }

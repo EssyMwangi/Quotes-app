@@ -12,7 +12,7 @@ export class QuotesComponent implements OnInit {
 
 
   quote:Quote[]=[
-    new Quote(1, 'Essy', 'Life','Every moment is a fresh beginning.','Anonymous',0,0,new Date(2019,1,7)),
+    new Quote(1, 'James', 'Life','Every moment is a fresh beginning.','Anonymous',0,0,new Date(2019,1,7)),
     new Quote(2, 'Ashley', 'Wisdom','Doubt is the beginning of wisdom.','Anonymous',0,0,new Date(2020,1,8)),
     new Quote(3, 'Njoki', 'Love','We love the things we love for what they are.','Anonymous',0,0,new Date(2020,2,1)),
   

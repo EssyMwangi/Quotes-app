@@ -22,7 +22,7 @@ h1{
   padding-bottom: 5%;
 }
 #name{
-  color:pink;
+  color:palevioletred;
   font-weight: 800;
 }
 .all-cards{
@@ -45,9 +45,12 @@ h1{
   font-size: 25px;
   text-align: center;
   /* background-color: transparent; */
-  
 
-  
+}
+.card-title1{
+  text-align: center;
+  color: black;
+
 }
 .btn{
   margin-bottom: 10% ;
@@ -106,7 +109,7 @@ h1{
 }
 .heading{
   text-align: center;
-  color: green;
+  color: black;
 }
 #like{
   font-size: 16px;
@@ -115,4 +118,7 @@ h1{
 #dislike{
   font-size: 16px;
   margin-left: 10px;
+}
+.quote-desc{
+  font-size: 40px;
 }
