@@ -1,5 +1,5 @@
 export class Quote {
-  showInfo: boolean;;
+  showInfo: boolean;
   constructor(
     public id: number,
     public name: string,
@@ -8,7 +8,8 @@ export class Quote {
     public author: string,
     public upVote: number,
     public dnVote: number,
-    public publishedDate: Date) {
-    this.showInfo=false;
+    public publishedDate: Date
+  ) {
+    this.showInfo = false;
   }
 }
