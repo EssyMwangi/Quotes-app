@@ -1,5 +1,6 @@
 # QuotesApp
 
+## Author 
 #### By **Essy Mwangi**
 `https://github.com/EssyMwangi/`
 
