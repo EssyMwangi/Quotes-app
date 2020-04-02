@@ -36,6 +36,8 @@ h1{
 .card{
   margin-bottom: 2%;
   box-shadow: 2px 2px 3px 2px black;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: whitesmoke;
   
 }
 .card1{
