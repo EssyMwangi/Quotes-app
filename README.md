@@ -2,7 +2,7 @@
 
 ## Author
 
-[Essy Mwangi]`https://github.com/EssyMwangi/`
+[Essy-Mwangi]`https://github.com/EssyMwangi/`
 
 ## Description
 
