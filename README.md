@@ -15,7 +15,7 @@ This project was generated with [Angular CLI]`https://github.com/angular/angular
 
 ## Screenshot
 
-<img src= "/home/essie/Documents/moringa-school-projects/moringa-core/IPS/ip-week-1/Quotes/src/assets/screenshot.png" width="900px" height="440px">
+<img src= "https://user-images.githubusercontent.com/44394821/78248992-46fd3e80-74f6-11ea-89a4-d4ad3e530ac0.png" width="900px" height="440px">
 
 
 ## Development server
