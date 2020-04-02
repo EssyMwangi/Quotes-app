@@ -7,7 +7,8 @@ h1{
 }
 .title{
   color: black;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-size: 80px;
  
 }
@@ -51,8 +52,11 @@ h1{
 }
 .card-title1{
   text-align: center;
-  color: whitesmoke;
+  color: palevioletred;
 
+}
+.card-title{
+  color: palevioletred;
 }
 .btn{
   margin-bottom: 10% ;
