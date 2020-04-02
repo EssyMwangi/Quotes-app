@@ -7,15 +7,12 @@ h1 {
 .title {
   color: black;
   font-family: "Playfair Display", serif;
-  font-size: 80px;
+  font-size: 50px;
 }
 .overlay {
   border-radius: 5px;
-  margin-top: 4%;
   margin-left: 4%;
   margin-right: 4%;
-  margin-bottom: 5%;
-  padding-top: 1%;
   padding-left: 1%;
   padding-bottom: 5%;
 }
