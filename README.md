@@ -13,6 +13,11 @@ This is Angular CLI application that displays quotes, allow the user to input ne
 
 This project was generated with [Angular CLI]`https://github.com/angular/angular-cli/` version 9.0.7.
 
+## Screenshot
+
+<img src= "/home/essie/Documents/moringa-school-projects/moringa-core/IPS/ip-week-1/Quotes/src/assets/screenshot.png" width="900px" height="440px">
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
